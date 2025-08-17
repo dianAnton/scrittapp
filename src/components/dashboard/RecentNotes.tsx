@@ -33,8 +33,8 @@ export default function RecentNotes() {
   ];
 
   return (
-    <div className="bg-white/60 p-6 rounded-2xl ring-1 ring-black/5 backdrop-blur-xl shadow-sm">
-      <div className="flex items-center justify-between mb-4">
+    <section className="rounded-2xl bg-white/60 p-4 sm:p-5 ring-1 ring-black/5 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,0,0,0.02),0_30px_60px_-15px_rgba(2,6,23,0.12)]">
+      <div className="mb-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Notebook className="h-5 w-5 text-slate-700" />
           <h3 className="text-lg md:text-xl font-semibold text-neutral-900">Recent notes</h3>
@@ -65,6 +65,6 @@ export default function RecentNotes() {
           </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

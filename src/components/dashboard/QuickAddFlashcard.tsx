@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { Layers, Plus } from "lucide-react";
+import { SquarePen, Plus, Layers } from "lucide-react";
 
 export default function QuickAddFlashcard() {
   const [front, setFront] = useState("");
@@ -20,9 +20,9 @@ export default function QuickAddFlashcard() {
   };
 
   return (
-    <div className="bg-white/60 p-6 rounded-2xl ring-1 ring-black/5 backdrop-blur-xl shadow-sm">
+    <div className="rounded-2xl bg-white/60 p-5 ring-1 ring-black/5 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,0,0,0.02),0_30px_60px_-15px_rgba(2,6,23,0.12)]">
       <div className="flex items-center gap-2 mb-4">
-        <Layers className="h-5 w-5 text-slate-700" />
+        <SquarePen className="h-5 w-5 text-slate-700" />
         <h3 className="text-lg font-semibold text-neutral-900">Add flashcard</h3>
       </div>
       <form onSubmit={handleSubmit} className="space-y-3">
@@ -56,7 +56,7 @@ export default function QuickAddFlashcard() {
           </div>
           <button
             type="submit"
-            className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-4 py-2 text-sm font-medium text-white ring-1 ring-black/5 hover:scale-[1.03] transition-transform"
+            className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-3 py-2 text-sm font-medium text-white ring-1 ring-black/5 hover:scale-[1.03] transition-transform"
           >
             <Plus className="h-4 w-4" />
             Add card
